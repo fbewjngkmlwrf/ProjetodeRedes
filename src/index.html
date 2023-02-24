@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Workflow Game Character</title>
+</head>
+<body>
+
+    <map name="image-map">
+        <area shape="rect" coords="245,688,853,21" alt="video" href="#video">
+    </map>
+    <h1 class="titulo">Workflow de criação de um Game Character</h1>
+    <h2>Criação de um Game Character para Unreal Engine 5 com o Maxon Zbrush, Blender 3D e Adobe Substance Painter.</h2>
+    <img usemap="#image-map" class="tumb" src="/img/Tumbnail.jpg" alt="Tumbnail">
+    <p class="int">Neste blogue vamos ver um dos muitos workflows para criação de um personagem para jogos 3D. Este workflow também pode ser utilizado para criação de personagens para animação 3D, com uma pequena diferença...</p>
+    <h2>Qual a diferença entre um modelo para jogos e animação?</h2>
+    <p>A regra é simples, todos os modelos 3D e os seus diferentes usos tem uma única diferença. O seu polycount (número de polígonos).</p>
+    <img src="/img/LowHigh.png" alt="LowHigh">
+    <p>Numa animação 3D, por exemplo, num filme tudo o que acontece é previso e é renderizado apenas uma vez, porém num jogo os movimentos do jogador são imprevisiveis. Por isso um modelo para jogos tem de ter sempre menos poligonos do que um modelo para animação. Os modelos com menos número de polígonos são chamados de lowpoly enquanto que os modelos com mais poligonos são chamados de highpoly.</p>
+    <h2>Workflow de criação de um personagem para jogos</h2>
+    <p>Escultura: Começamos pela escultura do nosso personagem para isto vamos usar o Zbrush da Maxon. O software standart para escultura. Se alguma vez viste um filme com algum personagem 3D ou alguma animação ela foi esculpida com este software.</p>
+    <img src="/img/Sculpt.png" alt="Escultura">
+    <p>Retopologia: Após a escultura o nosso modelo vai ficar com uma quantidade enorme de poligonos, podendo chegar aos milhares ou mesmo milhões de poligonos! Por isso, com o Blender, vamos usar este processo chamado retopologia. Vamos com ele reconstruir uma malha à volta do nosso personagem highpoly de modo a deixa-lo lowpoly.</p>
+    <img src="/img/Retopo.png" alt="Retopo">
+    <p>Uv Mapping: O próximo passo é um passo extremamente importante. Vamos abrir marcar seams (cortes) no nosso modelo para que ele possa ser colocado numa imagem 3D onde vamos projetar as texturas.</p>
+    <img src="/img/uvmap.png" alt="UvMapping">
+    <p>Baking: Agora que temos o nosso modelo pronto a texturizar temos um problema. Quando fizemos a retopologia, e ele perdeu detalhes. É para isso que o Baking está aqui para nos salvar. Ele vai projetar os detalhes do nosso modelo highpoly no nosso modelo lowpoly através dos Uv's. Daí a importância dos Uv's. Desta forma, conseguimos preservar grande nível de detalhes num modelo com poucos poligonos isto com o Substance Painter.</p>
+    <img src="/img/Baking.png" alt="Baking">
+    <p>Textura:  No substance painter vamos fazer todas as texturas para o nosso modelo. Neste passo vamos utilizar o Substance Painter.</p>
+    <img src="/img/Texture.png" alt="Textura">
+    <p>Rigging: Este passo é o passo em que vamos criar o esqueleto que nos vai possibilitar animar o personagem. Para ele vamos usar o Blender</p>
+    <img src="/img/Rigging.png" alt="Rigging">
+    <p>Weight Paint: Vamos definir a influencia do esqueleto que criamos no nosso personagem. Isto, também no Blender.</p>
+    <img src="/img/Weight paint.png" alt="WeightPaint">
+    <p>Animação: Agora podemos animar e depois exportar o nosso modelo para o Unreal Engine.</p>
+    <img src="/img/Animation.png" alt="Animação">
+    <h2>Recapitulação dos softwares...</h2> 
+    <ul>
+        <li>Escultura - Zbrush</li>
+        <li>Retopologia, Uv Mapping, Rigging, Weight Paint e Aminação - Blender</li>
+        <li>Baking e Textura - Substance Painter</li>
+    </ul>
+    <table>
+        <tr>
+          <th class="titulo-tabela" colspan="2">Preço dos softwares utilizados</th>
+        </tr>
+        <tr>
+          <th>Zbrush</th>
+          <td>600 euros/ano</td>
+        </tr>
+        <tr>
+            <th>Blender</th>
+            <td>Grátis</td>
+        </tr>
+        <tr>
+            <th>Substance</th>
+            <td>240 euros/ano</td>
+        </tr>
+    </table>
+    <br>
+    <div class ="duv">
+    <br>
+    <h2>Dúvidas?</h2>
+    <form>
+        E-mail <input type ="text" name = "E-mail" size="40"><br>
+        Pergunta: <br><textarea name= "textarea" cols= "130" rows= "2">A sua pergunta...</textarea>
+    <br>
+    <div class="button">
+        <input type= "submit" value= "Enviar Pergunta">
+        <input type= "reset" value= "Limpar">
+    </div>
+    <br>
+    </form>
+    </div>
+    <h2>Outros recuros:</h2>
+    <div class ="rec">
+    <iframe id="video" width="840" height="400" src="https://www.youtube.com/embed/cDLgAFDf0V4"></iframe>
+    <br>
+    <a href="https://flippednormals.com">Flipped Normals</a>
+    <a href="https://www.cgboost.com">CGBoost</a>
+    <a href="https://blendermarket.com">Blender Market</a>
+    </div>
+</body>
+</html>

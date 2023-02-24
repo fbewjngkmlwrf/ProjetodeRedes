@@ -1,0 +1,70 @@
+body{
+    font: 31px 'EuclidCircularB',Arial,Helvetica,sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #474b2f;
+    background-color: #f9fbf7;
+}
+h1, h2{
+    font: 15px/1.333 'EuclidCircularB',Arial,Helvetica,sans-serif;
+    font-size: 31px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+h2{
+    font-size: large;
+    font: weight 400px;
+}
+
+.int {
+    color: #646659;
+    font-size: 18px;
+}
+p, li,a, td, tr, table, th, form {
+    color: #474b2f;
+    font-size: 18px;
+}
+
+img{
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+    width: 40%;
+}
+
+.tumb{
+    width: 70%;
+}
+
+.button, form, .rec{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.duv{
+    background: url(/img/Duvida.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    color:#f9fbf7;
+}
+form{
+    color:#f9fbf7;
+}
+
+.button, .rec{
+    text-align: center;
+}
+
+table, td, th{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border:1px solid black;
+}
+
+.titulo{
+    text-align: center;
+}
